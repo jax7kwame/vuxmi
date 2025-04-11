@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vuxmi</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- icon fonts stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <!-- added padding -->
+        <nav class="navbar navbar-expand-lg pt-2 pb-2">
+            <div class="container-fluid">
+                <!-- added font, font-size, and margin -->
+                <a class="navbar-brand lobster-regular fs-2 ms-2" href="#" style="color: #F4F7F7;">vuxmi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Added margin -->
+                <div class="collapse navbar-collapse ms-2 mb-2" id="navbarSupportedContent">
+                    <!-- changed me-auto to m-auto -->
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <!-- Added me-3, text-white, fw-bolder -->
+                        <li class="nav-item me-3">
+                            <a class="nav-link active text-white fw-bolder" aria-current="page" href="#">home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white" href="#">shop</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white" href="#">flash sales</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white" href="#">blog</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white" href="#">about</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white" href="#">contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <!-- added custom class -->
+                        <input class="search-form me-2" type="search" placeholder="search" aria-label="Search">
+                        <!-- Added custom class -->
+                        <button class="search-btn" type="submit">search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End navigation -->
+    </header>
+
+    <!-- Hero slider  -->
+
+    <section class="hero-slider">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/1-omid-armin-PmB5Uo9dUk4-unsplash (1).jpg" class="d-block carousel-img"
+                        alt="...">
+                    <!-- added div -->
+                    <div class="carousel-overlay teko-heading">
+                        <h1>New look</h1>
+                        <h2>2025</h2>
+                        <button class="carousel-btn">explore</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/clarke-sanders-JpCOGj0uIlI-unsplash.jpg" class="d-block carousel-img"
+                        alt="...">
+                    <div class="carousel-overlay teko-heading">
+                        <h1>New blend</h1>
+                        <h2>2025</h2>
+                        <button class="carousel-btn">explore</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/piotr-szulawski-XjR-Y8PKeww-unsplash.jpg" class="d-block carousel-img"
+                        alt="...">
+                    <div class="carousel-overlay teko-heading">
+                        <h1>New showcase</h1>
+                        <h2>2025</h2>
+                        <button class="carousel-btn">explore</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- End Hero slider -->
+
+    <!-- Latest products section -->
+    <!-- added padding top -->
+    <section class="lastest-product-section pt-4">
+        <!-- Heading -->
+        <!-- Added text-center -->
+        <div class="container">
+            <h1 class="teko-heading mt-5 mb-4 text-center">Latest products and designs</h1>
+            <nav class="category-nav mb-5">
+                <ul>
+                    <!-- changed to anchor tag, added me-5 -->
+                    <li class="me-5 category-item-active"><a href="">All</a></li>
+                    <li class="me-5 category-item"><a href="">Dresses</a></li>
+                    <li class="me-5 category-item"><a href="">Shoes</a></li>
+                    <li class="me-5 category-item"><a href="">Bags</a></li>
+                    <li class="me-5 category-item"><a href="">Head wear</a></li>
+                    <li class="me-5 category-item"><a href="">summer wear</a></li>
+                    <li class="me-5 category-item"><a href="">More</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End heading -->
+        <!-- Products card grid -->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+                <!-- card 1 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/valerie-elash-gsKdPcIyeGg-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: white;">popular</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Black long-sleeved shirt & grey skirt combo
+                            </p>
+                            <p class="card-text fw-bold">$20.89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/khaled-ghareeb-n84s3jgzhKk-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: yellow;">new</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Classic stylish vibe
+                            </p>
+                            <p class="card-text fw-bold">$29.89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/calvin-visuals-Mx4auh5zO4w-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: greenyellow;">flash
+                                    sale</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Denim jacket for women
+                            </p>
+                            <p class="card-text fw-bold">$20.89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/clem-onojeghuo-7a6ptA97LXA-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: white;">popular</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">English fedora hat
+                            </p>
+                            <p class="card-text fw-bold">$20.89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/annie-williams-FlP6C5pkMKs-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: yellow;">new</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Perfect sunglasses
+                            </p>
+                            <p class="card-text fw-bold">$20.89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/joecalih-kFtTXa5ZS1Q-unsplash.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: greenyellow;">flash
+                                    sale</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Fitness & wellness outfit
+                            </p>
+                            <p class="card-text fw-bold">$30.10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 7 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/nischal-kanishk-S7a1XZ7a2vw-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Beautiful heels
+                            </p>
+                            <p class="card-text fw-bold">$15.89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 8 -->
+                <div class="col">
+                    <!-- added border-none -->
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img src="./assets/images/products/tracey-hocking-HxyWQ6YPM80-unsplash.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                                <button class="card-overlay-btn" style="background-color: yellow;">new</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Added my-3 -->
+                            <p class="card-title fw-light mt-3 mb-2">Floral beach wear
+                            </p>
+                            <p class="card-text fw-bold">$10.89</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- End product card grid -->
+    </section>
+
+    <!-- Latest products section -->
+
+    <!-- Features section  -->
+    <section class="mt-5 py-4 features-section">
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+                <!-- removed border -->
+                <div class="card border-0 bg-transparent">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="text-center feature-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+
+                    <!-- added text-center -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Door step delivery</h5>
+                        <p class="fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Aspernatur
+                            distinctio dolore in, dolorum tempore vitae veritatis adipisci delectus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 bg-transparent">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="text-center feature-icon">
+                        <i class="bi bi-telephone-inbound"></i>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Reliable online support</h5>
+                        <p class="fw-light">Delectus sequi eaque quod incidunt tempora impedit neque
+                            inventore, unde
+                            amet autem rerum natus earum. Illum reprehenderit temporibus vitae nobis ut sit?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 bg-transparent">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="text-center feature-icon">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">100% Money back</h5>
+                        <p class="fw-light">Aut error asperiores eum quo hic aliquam a, molestiae rem, magnam
+                            porro
+                            enim placeat in eligendi iusto quidem quos voluptatem. Error, voluptate!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End features section -->
+
+    <!-- Trends -->
+    <section class="trends-section">
+
+        <div class="container text-center mt-5">
+            <h1 class="teko-heading trends-heading">
+                Trends</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card border-0 my-4">
+                        <div class="trend">
+                            <img src="./assets/images/trends/daria-strategy-OH6jXILNVAo-unsplash.jpg" alt=""
+                                class="card-img">
+                            <div class="trend-card-overlay teko-heading">
+                                <h1>Eye glasses</h1>
+                                <h3 class="mb-4">Bold & trendy</h3>
+                                <a class="trend-btn" href="#">see more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card border-0 mb-4">
+                        <a href="#">
+                            <img src="./assets/images/trends/alex-quezada-T9QXkqxyo0E-unsplash.jpg" alt=""
+                                class="card-img">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0">
+                        <div class="trend">
+                            <img src="./assets/images/trends/mahdi-bafande-XCU9ZV_ys5w-unsplash.jpg" alt=""
+                                class="card-img">
+                            <div class="trend-card-overlay ps-4 teko-heading">
+                                <h1 class="fs-1">Gent's wear collection</h1>
+                                <h3 class="mb-4">Classic</h3>
+                                <a class="trend-btn" href="#">see more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End trends -->
+
+    <footer class="mt-5 py-3 pt-4">
+        <div class="container">
+            <div class="subscription-form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form action="#">
+                            <input type="text" placeholder="Your email address">
+                            <button class="subscription-btn" type="submit">Subscribe to our newsletter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-partitions mt-5 text-white">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-partition">
+                            <h5>About us</h5>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-partition">
+                            <h5>Customer Care</h5>
+                            <ul>
+                                <li><a href="">Search</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Shipping & Delivery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-partition">
+                            <h5>Our Services</h5>
+                            <ul>
+                                <li><a href="">Free Shipping</a></li>
+                                <li><a href="">Free Returnes</a></li>
+                                <li><a href="">Terms and conditions</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="social-links text-end">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class=" btn text-white"><i class="bi bi-facebook fs-2"></i></a>
+                    <a class=" btn text-white"><i class="bi bi-twitter-x fs-2"></i></a>
+                    <a class=" btn text-white"><i class="bi bi-instagram fs-2"></i></a>
+                    <a class=" btn text-white"><i class="bi bi-reddit fs-2"></i></a>
+                    <a class=" btn text-white"><i class="bi bi-snapchat fs-2"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center text-white pt-5">
+            <p class="fs-small">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | jax-creative-loop
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html

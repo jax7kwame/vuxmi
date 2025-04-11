@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* brand font */
+.lobster-regular {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.teko-heading {
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #CE8F30;
+}
+
+/* hover effect */
+
+.navbar-nav .nav-link {
+    display: inline-block;
+    /* Display inline block */
+    position: relative;
+    /* Set position relative */
+    color: whitesmoke;
+    /* Set text color */
+}
+
+.navbar-nav .nav-link:after {
+    content: '';
+    /* Add content after the element */
+    position: absolute;
+    /* Position absolute for pseudo-element */
+    width: 100%;
+    /* Full width */
+    transform: scaleX(0);
+    /* Initial scale of 0 for underline effect */
+    height: 3px;
+    /* Height of the underline */
+    bottom: 0;
+    /* Align to bottom */
+    left: 0;
+    /* Align to left */
+    background-color:
+        whitesmoke;
+    /* Background color of the underline */
+    transform-origin: bottom right;
+    /* Set transform origin */
+    transition: transform 0.25s ease-out;
+    /* Transition effect for the underline */
+}
+
+.navbar-nav .nav-link:hover:after {
+    transform: scaleX(1);
+    /* Scale the underline on hover */
+    transform-origin: bottom left;
+    /* Set transform origin */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F4F7F7;
+}
+
+.search-form {
+    padding: 10px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: #F4F7F7;
+    box-shadow: inset 6px 6px 6px blue inset -6px -6px 6px #F4F7F7;
+}
+
+
+.search-btn {
+    border-radius: 15px;
+    height: 44px;
+    text-transform: lowercase;
+
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    background-color: #ffeba7;
+    color: #102770;
+    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, .2);
+}
+
+.search-btn:active,
+.search-btn:focus {
+    background-color: #6061a8;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+}
+
+.search-btn:hover {
+    background-color: #6061a8;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+}
+
+.navbar .navbar-toggler {
+    background-color: #F4F7F7;
+    border-radius: 17px;
+    padding: 7px 15px;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler:active {
+    background-color: #ffeba7;
+    color: #F4F7F7;
+}
+
+/* End navigation */
+
+/* Hero slider */
+
+.carousel-img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.carousel-item {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-overlay h1 {
+    font-size: 6em;
+}
+
+.carousel-overlay h2 {
+    font-size: 2.5em;
+}
+
+.carousel-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: background-color 0.5s ease-out;
+}
+
+.carousel-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* End Hero slider */
+
+/* Latest product section */
+.category-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.category-nav .category-item,
+.category-item-active {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    background-color: #CE8F30;
+    color: black;
+    font-weight: 400;
+    padding: 5px 18px 7px 18px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    /* transition: background-color 0.5s ease-in-out; */
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: white;
+    /* transition: background-color 0.5s ease-in-out; */
+}
+
+.category-nav .category-item-active {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.category-nav li:hover,
+.category-nav a:hover {
+    background-color: #F4F7F7;
+    color: black;
+}
+
+/* End latest product section */
+
+/* Products card grid */
+.card-overlay-btn {
+    border: none;
+    padding: 4px 10px 6px 10px;
+    border-radius: 18px;
+    font-size: small;
+    font-weight: 700;
+}
+
+/* End products card grid */
+
+/* Features sections */
+.features-section {
+    background-color: #ffeba7;
+}
+
+.feature-icon {
+    font-size: 4rem;
+}
+
+/* End feature section */
+
+/* Trends */
+
+.trends-heading {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height: 0;
+    letter-spacing: -32px;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-underline-position: right under;
+}
+
+
+
+.trend {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.trend-card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trend-btn {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 6px 15px;
+
+}
+
+.trend-btn:hover {
+    background-color: transparent;
+    color: antiquewhite;
+}
+
+
+
+/* End trends */
+
+/* Footer */
+
+footer {
+    background-color: #252424;
+}
+
+
+.subscription-form input {
+    margin: 15px 0;
+    padding: 12px 20px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #CE8F30;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.2s ease all;
+}
+
+.subscription-form input[type=text]:focus {
+    border-color: #ffeba7;
+}
+
+.subscription-btn {
+
+    border-radius: 20px;
+}
+
+.subscription-btn {
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    background: linear-gradient(90deg, #CE8F30 0%, #ED3224 100%);
+}
+
+.subscription-btn::after {
+    font-family: "";
+    content: '';
+}
+
+.footer-partition li {
+    list-style: none;
+}
+
+.footer-partition a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer-partition a:hover {
+    background-color: transparent;
+}
+
+.social-links .bi-facebook:hover {
+    color: #1877F2;
+}
+
+.social-links .bi-twitter-x:hover {
+    color: #f5f8fa;
+}
+
+.social-links .bi-instagram:hover {
+    color: #fbad50;
+}
+
+.social-links .bi-reddit:hover {
+    color: #FF4500;
+}
+
+.social-links .bi-snapchat:hover {
+    color: #FFFC00;
+}
+
+/* End footer */
